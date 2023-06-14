@@ -1,7 +1,8 @@
 let base = prompt ("Digite o valor da base:");
 let altura = prompt("Digite o valor da altura:");
-let area = base * altura;
 
-function calculaArea() {
-    console.log("A área do objeto é: " + area);
+function calculaArea(base, altura) {
+  return base * altura;
 }
+
+alert("A área do objeto é: " + calculaArea(base, altura))
