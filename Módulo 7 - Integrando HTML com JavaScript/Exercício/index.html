@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Validação JavaScript</h1>
+        <form id="form-deposito">
+            <input type="number" id="value-a" required placeholder="Digite um valor qualquer" />
+            <input type="number" id="value-b" required placeholder="Digite um valor maior do que o primeiro campo" />
+            <p class="error-message">
+                O valor deste campo precisa ser maior do que o valor do primeiro campo!
+            </p>
+            <button type="submit" id="btn-depositar">Validar</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
