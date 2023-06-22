@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+
+.display-justify {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.display-justify h2 {
+    margin-bottom: 30px;
+}
+
+input {
+    margin-bottom: 16px;
+}
+
+form {    
+    min-width: 400px;
+}
+
+button {
+    margin-top: 30px;
+    width: 100px;
+}
