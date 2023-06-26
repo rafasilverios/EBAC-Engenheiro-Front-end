@@ -17,9 +17,27 @@
             border-radius: 8px;
         }
 
-        /* section h1 {
-            text-align: center;
-        } */
+        @media screen and (max-width: 920px) {
+            #destinos .container .row {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+            }
+
+            .col-4 {
+                width: 100%;
+            }
+
+            .col-4 article {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #destinos .container .row {
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
     </style>
 </head>
 <body>
@@ -58,16 +76,40 @@
     </div>
 
     <section id="destinos" class="pt-5 pb-5">        
-        <h1 class="mb-5 text-center">Melhores destinos</h1>
-        <div class="container grid-container">
+        <h1 class="mb-5 mt-5 text-center">Melhores destinos</h1>
+        <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <article class="card">
+                    <article class="card mt-3">
                         <img src="./image/maldivas.jpg" alt="Foto Maldivas">
                         <div class="card-body">
                             <h4 class="card-title">Maldivas</h4>
-                            <p>
+                            <p class="border-top border-bottom pt-3 pb-3">
                                 Venha se encantar nas deslumbrantes Maldivas! Com suas praias paradisíacas de areia branca e águas cristalinas, este arquipélago oferece um refúgio perfeito para relaxar e se reconectar com a natureza. Explore os recifes de corais coloridos em mergulhos emocionantes ou simplesmente mergulhe nas águas tranquilas. Os luxuosos resorts proporcionam acomodações exclusivas, onde você poderá desfrutar de vistas incríveis e serviços impecáveis. A hospitalidade calorosa dos habitantes locais e a culinária exótica completam a experiência única das Maldivas. Deixe-se levar pela serenidade e beleza deste destino de tirar o fôlego. Reserve agora e comece a criar memórias inesquecíveis nas Maldivas.
+                            </p>
+                            <a href="#" class="btn btn-primary">Compre seu pacote</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card mt-3">
+                        <img src="./image/caribe.jpg" alt="Foto Maldivas">
+                        <div class="card-body">
+                            <h4 class="card-title">Caribe</h4>
+                            <p class="border-top border-bottom pt-3 pb-3">
+                                Descubra o Caribe! Com suas praias de areia branca, águas turquesa e clima tropical, este destino é um sonho transformado em realidade. Relaxe em uma rede à sombra das palmeiras, mergulhe em recifes de corais repletos de vida marinha ou dance ao som de ritmos caribenhos contagiantes. Explore ilhas deslumbrantes, como Aruba, Jamaica e Bahamas, cada uma com sua própria essência e cultura vibrante. Desfrute de uma culinária deliciosa, com pratos tropicais e sabores exóticos. De resorts luxuosos a aventuras emocionantes, o Caribe oferece uma experiência única e inesquecível. Não espere mais para embarcar nessa jornada de descobertas e relaxamento. Reserve sua viagem agora mesmo!
+                            </p>
+                            <a href="#" class="btn btn-primary">Compre seu pacote</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card mt-3">
+                        <img src="./image/jericoacoara.jpg" alt="Foto Maldivas">
+                        <div class="card-body">
+                            <h4 class="card-title">Jericoacoara</h4>
+                            <p class="border-top border-bottom pt-3 pb-3">
+                                A magia de Jericoacoara! Com suas dunas de areia branca, lagoas cristalinas e um pôr do sol deslumbrante, este destino encantador é o refúgio perfeito para relaxar e se reconectar com a natureza. Explore praias paradisíacas, faça caminhadas pelas trilhas naturais e aproveite os ventos perfeitos para a prática de esportes aquáticos, como kitesurf e windsurf. Delicie-se com a gastronomia local, com frutos do mar frescos e pratos típicos deliciosos. Desfrute de uma atmosfera descontraída e hospitaleira, com charmosas pousadas e restaurantes à beira-mar. Em Jericoacoara, você encontrará paz, aventura e momentos inesquecíveis. Reserve sua viagem para Jericoacoara hoje mesmo!
                             </p>
                             <a href="#" class="btn btn-primary">Compre seu pacote</a>
                         </div>
