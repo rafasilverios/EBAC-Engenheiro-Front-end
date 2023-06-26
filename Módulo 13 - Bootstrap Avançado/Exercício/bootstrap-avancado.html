@@ -11,11 +11,15 @@
             object-fit: cover;
         }
 
-        .carousel-inner h2 {
+        .carousel-inner h3 {
             background-color: rgba(0, 0, 0, 0.4);
             padding: 8px;
             border-radius: 8px;
         }
+
+        /* section h1 {
+            text-align: center;
+        } */
     </style>
 </head>
 <body>
@@ -24,19 +28,19 @@
             <div data-bs-interval="3000" class="carousel-item active">
                 <img class="d-block w-100" src="./image/maldivas.jpg" alt="Imagem de uma praia nas Maldivas">
                 <div class="carousel-caption">
-                    <h2>Foto de uma praia</h2>
+                    <h3>Viaje para as Maldivas com até 20% de desconto</h3>
                 </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item">
                 <img class="d-block w-100" src="./image/caribe.jpg" alt="Imagem de uma praia no caribe">
                 <div class="carousel-caption">
-                    <h2>Foto de uma praia</h2>
+                    <h3>7 dias no Caribe com passagens a partir de R$ 2.474</h3>
                 </div>
             </div>
             <div data-bs-interval="3000" class="carousel-item">
                 <img class="d-block w-100" src="./image/jericoacoara.jpg" alt="Imagem de uma praia em jericoacoara">
                 <div class="carousel-caption">
-                    <h2>Foto de uma praia</h2>
+                    <h3>Suas férias em Jericoacoara em até 10x sem juros</h3>
                 </div>
             </div>
         </div>
@@ -52,6 +56,26 @@
             <button type="button" data-bs-target="carousel-exemplo" data-bs-slide-to="2"></button>
         </div>
     </div>
+
+    <section id="destinos" class="pt-5 pb-5">        
+        <h1 class="mb-5 text-center">Melhores destinos</h1>
+        <div class="container grid-container">
+            <div class="row">
+                <div class="col-4">
+                    <article class="card">
+                        <img src="./image/maldivas.jpg" alt="Foto Maldivas">
+                        <div class="card-body">
+                            <h4 class="card-title">Maldivas</h4>
+                            <p>
+                                Venha se encantar nas deslumbrantes Maldivas! Com suas praias paradisíacas de areia branca e águas cristalinas, este arquipélago oferece um refúgio perfeito para relaxar e se reconectar com a natureza. Explore os recifes de corais coloridos em mergulhos emocionantes ou simplesmente mergulhe nas águas tranquilas. Os luxuosos resorts proporcionam acomodações exclusivas, onde você poderá desfrutar de vistas incríveis e serviços impecáveis. A hospitalidade calorosa dos habitantes locais e a culinária exótica completam a experiência única das Maldivas. Deixe-se levar pela serenidade e beleza deste destino de tirar o fôlego. Reserve agora e comece a criar memórias inesquecíveis nas Maldivas.
+                            </p>
+                            <a href="#" class="btn btn-primary">Compre seu pacote</a>
+                        </div>
+                    </article>
+                </div>
+            </div>        
+        </div>
+    </section>
     
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
