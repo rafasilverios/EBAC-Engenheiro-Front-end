@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
-    ">
+    <title>Game Engine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,16 +12,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title">Nome do restaurante</h1>
+            <h1 class="navbar-brand m-0 section-title">GE</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#sobre-o-restaurante">
+                        <a class="nav-link" href="#sobre">
                             <i class="bi bi-house-door me-1"></i>
                             Sobre
                         </a>
@@ -54,14 +53,14 @@
         <section id="sobre-o-restaurante">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="./slides/slide1.png" alt="Foto do espaço interno do restaurante">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./Images/Slides/resident.png" alt="Imagem jogo resident evil">
                     </div>
-                    <div class="carousel-item" data-bs-interval="1000">
-                        <img src="./slides/slide2.png" alt="Duas taças de vinho">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./Images/Slides/hogwarts.jpg" alt="Imagem jogo hogwarts">
                     </div>
-                    <div class="carousel-item" data-bs-interval="1000">
-                        <img src="./slides/slide3.png" alt="Uma mesa com comida">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./Images/Slides/zelda.jpg" alt="Imagem jogo zelda">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -76,23 +75,23 @@
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
-            <div class="pt-5 pb-5">
+            <div class="pt-5 pb-5 sobre" id="sobre">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="./restaurante.jpg" class="d-block w-100 rounded" alt="Foto do Espaço interno do restaurante">
+                            <img src="./Images/loja/loja-fisica.jpg" class="d-block w-100 rounded" alt="Foto do Espaço interno do restaurante">
                         </div>
                         <div class="col-md-7 mt-3 mt-md-0">
-                            <h2 class="section-title">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <h2 class="section-title mb-4">Sobre a <span class="border-ge">Game Engine</span></h2>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo laudantium suscipit delectus, laboriosam soluta in dignissimos hic, illum amet doloremque vitae magnam debitis earum asperiores cumque aliquam, deleniti modi nihil.
+                                Descubra a melhor seleção de jogos novos e antigos na nossa loja. Encontre os títulos mais populares e clássicos para todas as plataformas. Compre ou alugue e desfrute de horas de diversão. Satisfação garantida para os amantes de jogos!
                             </p>
-                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <h3 class="section-title">Compre, alugue ou jogue na loja</h3>
                             <p>
                                 <ul>
-                                    <li>Item 1</li>
-                                    <li>Item 2</li>
-                                    <li>Item 3</li>
+                                    <li>Jogos novos</li>
+                                    <li>Jogos antigos</li>
+                                    <li>Todos os consoles ou PC</li>
                                 </ul>
                             </p>
                         </div>
@@ -103,37 +102,37 @@
         <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center pt-3">Para todas <span class="text-colored">as ocasiões</span></h2>
+                    <h2 class="section-title text-center pt-3">Para todos os gostos</h2>
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
-                        <img class="d-block w-100 rounded mb-3" src="eventos/aniversario.jpg" alt="">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-calendar-heart-fill"></i>
-                            Aniversários
+                        <img class="d-block w-100 rounded mb-3" src="./Images/jogos/jogos-antigos.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4 mt-5 mb-4">
+                            <i class="bi bi-joystick"></i>
+                            Jogos Antigos
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium dolores maxime doloremque, at expedita id neque quia ab ex ducimus velit impedit ea laudantium dolore autem sint dignissimos ipsam?
+                            Reviva a nostalgia dos jogos antigos em nossa loja. Descubra uma vasta seleção de clássicos que marcaram gerações. Revigore as memórias e mergulhe na diversão retrô. Garanta agora os seus jogos antigos favoritos e embarque em uma viagem ao passado dos videogames.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img class="d-block w-100 rounded mb-3" src="eventos/casamento.jpg" alt="">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-arrow-through-heart-fill"></i>
-                            Recepção para Casamento
+                        <img class="d-block w-100 rounded mb-3" src="./Images/jogos/novos-jogos.png" alt="">
+                        <h3 class="section-title text-colored fs-4 mt-5 mb-4">
+                            <i class="bi bi-controller"></i>
+                            Últimos Lançamentos
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium dolores maxime doloremque, at expedita id neque quia ab ex ducimus velit impedit ea laudantium dolore autem sint dignissimos ipsam?
+                            Explore o mundo dos jogos recém-lançados. Descubra as últimas novidades e mergulhe em experiências inovadoras. Desfrute de gráficos impressionantes, jogabilidade envolvente e histórias cativantes. Mantenha-se atualizado com os melhores títulos.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img class="d-block w-100 rounded mb-3" src="eventos/confraternizacoes.jpg" alt="">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-people-fill"></i>
-                            Confraternizações
+                        <img class="d-block w-100 rounded mb-3" src="./Images/jogos/jogos-locacao.png" alt="">
+                        <h3 class="section-title text-colored fs-4 mt-5 mb-4">
+                            <i class="bi bi-bag-heart"></i>
+                            Locação de jogos
                         </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium dolores maxime doloremque, at expedita id neque quia ab ex ducimus velit impedit ea laudantium dolore autem sint dignissimos ipsam?
+                            Uma forma econômica de desfrutar da variedade de jogos em nossa loja. Aproveite a oportunidade de jogar os títulos mais populares por uma fração do valor. Nossos aluguéis oferecem flexibilidade e diversidade, permitindo a melhor experiência sem comprometer seu orçamento. 
                         </p>
                     </div>
                 </div>
@@ -144,111 +143,144 @@
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">
-                        Nosso <span class="text-colored">Cardápio</span>
+                        Nosso Catálogo
                     </h2>
                 </div>
                 <div class="row mt-4">
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas" class="fw-bold text-start nav-link text-colored active">Bebidas não alcoólicas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored ">Bebidas alcoólicas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored ">Entradas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored ">Pratos Principais</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start nav-link text-colored ">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-antigos" class="fw-bold text-start nav-link text-colored active">Jogos Antigos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-novos" class="fw-bold text-start nav-link text-colored ">Jogos Novos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aluguel" class="fw-bold text-start nav-link text-colored ">Aluguel</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
                         <div class="tab-content">
-                            <div class="tab-pane active" id="bebidas-nao-alcoolicas" >
+                            <div class="tab-pane active" id="jogos-antigos" >
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
-                                        <h5 class="text-colored fw-bold mt-3">Coca-Cola</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/mario.jfif" alt="Mario">
+                                        <h5 class="text-colored fw-bold mt-3">Mario</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/suco.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-3">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/sonic.png" alt="Sonic">
+                                        <h5 class="text-colored fw-bold mt-3">Sonic</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/coca-cola.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-3">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/grand-turismo.jpg" alt="Gran turismo">
+                                        <h5 class="text-colored fw-bold mt-3">Gran Turismo</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/coca-cola.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-3">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/golden.jpg" alt="Golden Axe">
+                                        <h5 class="text-colored fw-bold mt-3">Golden Axe</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/coca-cola.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-3">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/mariokart64.png" alt="Mario Kart">
+                                        <h5 class="text-colored fw-bold mt-3">Mario Kart</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/coca-cola.jpg" alt="Suco">
-                                        <h5 class="text-colored fw-bold mt-3">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/moralkombat.jpg" alt="Mortal Kombat">
+                                        <h5 class="text-colored fw-bold mt-3">Mortal Kombat</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="bebidas-alcoolicas">
+                            <div class="tab-pane" id="jogos-novos">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/cerveja.jpg" alt="Cerveja">
-                                        <h5 class="text-colored fw-bold mt-3">Cerveja</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/deliver-us-mars.png" alt="Deliver Us Mars">
+                                        <h5 class="text-colored fw-bold mt-3">Deliver Us Mars</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/bebidas/vinho.jpg" alt="Vinho">
-                                        <h5 class="text-colored fw-bold mt-3">Vinho</h5>
+                                        <img class="d-block w-100" src="./Images/catalogo/kerbal-space-program-2.png" alt="Kerbal Space Program 2">
+                                        <h5 class="text-colored fw-bold mt-3">Kerbal Space Program 2</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
-                                    </div>                                    
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Images/catalogo/resident-evil.png" alt="Resident Evil 4 - Remake">
+                                        <h5 class="text-colored fw-bold mt-3">Resident Evil 4 - Remake</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Images/catalogo/sonic-novo.png" alt="Sonic">
+                                        <h5 class="text-colored fw-bold mt-3">Sonic</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>  
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Images/catalogo/star-wars-jedi-survivor.png" alt="Star Wars jedi: Survivor">
+                                        <h5 class="text-colored fw-bold mt-3">Star Wars jedi: Survivor</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Images/catalogo/starfield.png" alt="StarField">
+                                        <h5 class="text-colored fw-bold mt-3">StarField</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Images/catalogo/zelda.png" alt="Zelda">
+                                        <h5 class="text-colored fw-bold mt-3">Zelda</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="entradas">
+                            <div class="tab-pane" id="aluguel">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/entradas/entrada.jpg" alt="Entradas">
-                                        <h5 class="text-colored fw-bold mt-3">Nome da entrada</h5>
+                                        <img class="d-block w-100" src="./Images/consoles/xbox.jpg" alt="Xbox">
+                                        <h5 class="text-colored fw-bold mt-3">Jogos para Xbox</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/entradas/entrada.jpg" alt="Entradas">
-                                        <h5 class="text-colored fw-bold mt-3">Nome da entrada</h5>
+                                        <img class="d-block w-100" src="./Images/consoles/ps5.jpg" alt="Plays Station 5">
+                                        <h5 class="text-colored fw-bold mt-3">Jogos para PS5</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/entradas/entrada.jpg" alt="Entradas">
-                                        <h5 class="text-colored fw-bold mt-3">Nome da entrada</h5>
+                                        <img class="d-block w-100" src="./Images/consoles/nx.jpg" alt="Nintendo Switch">
+                                        <h5 class="text-colored fw-bold mt-3">Jogos para Switch</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="cardapio/entradas/entrada.jpg" alt="Entradas">
-                                        <h5 class="text-colored fw-bold mt-3">Nome da entrada</h5>
+                                        <img class="d-block w-100" src="./Images/consoles/pc.jpg" alt="PC Gamer">
+                                        <h5 class="text-colored fw-bold mt-3">Jogos para PC</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
@@ -328,7 +360,7 @@
         <section id="fale-conosco" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                    <h2 class="section-title text-center pb-4">Fale Conosco</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-7 mb-5">
@@ -381,15 +413,20 @@
                                 <i class="bi bi-cursor-fill"></i>
                                 Endereço
                             </h3>
-                            <p>Rua Teste Exemplo, n 145, Bairro Bootstrap - São Paulo - SP</p>
+                            <p>Rua dos Gamers, n 182, Bairro X Play Switch PC - Curitiba - PR</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <footer>
+        <div class="container">
+            &copy; Site portifólio de&nbsp;<span class="section-title fs-5"><a href="https://github.com/rafasilverios"> Rafael Silverio </a></span>&nbsp;- 2023
+        </div>
+    </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
-    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

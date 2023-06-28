@@ -1,14 +1,40 @@
+@font-face {
+    font-family: 'Gamer';
+    src: url(./font/TechnoRaceItalic.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
 
+.section-title {
+    font-family: 'Gamer', cursive;
+    font-weight: normal;
+}
+
 .navbar {
-    background-color: #e15f41;
+    background-color: #2c2c2c;
+}
+
+.navbar h1 {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 6px 12px 0 8px;
+    font-size: 3rem;
+}
+
+.border-ge {
+    border: 3px solid #2c2c2c;
+    padding: 8px;
+    font-size: 2.5rem;
+    background-color: #fff;
 }
 
 #cabecalho .nav .nav-link.active {
     background-color: #fff;
-    color: #e15f41;
+    color: #2c2c2c;
 }
 
 #cabecalho .nav .nav-link,
@@ -19,30 +45,32 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #ffeae6;
-}
-
-.section-title {
-    font-family: Pacifico, cursive;
+    background-color: #f5f5f5;
 }
 
 #sobre-o-restaurante,
 #cardapio {
-    background-color: #ffeae6;
+    background-color: #f5f5f5;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    min-height: 65vh;
 }
 
 .text-colored {
-    color: #e15f41;
+    color: #2c2c2c;
 }
 
 .nav-cardapio .nav-link.active,
 #fale-conosco button {
-    background-color: #e15f41;
+    background-color: #2c2c2c;
     color: #fff;
 }
 
 .nav-cardapio .nav-link:hover {
-    color: #e15f41;
+    color: #2c2c2c;
 }
 
 #cardapio {
@@ -63,12 +91,24 @@ body {
 }
 
 #eventos {
-    min-height: 60vh;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    padding: 24px;
+    background-color: #2c2c2c;
+    color: #fff;
+    text-align: center;
+}
+
+footer .container a {
+    color: #fff;
 }
 
 @media screen and (max-width: 767px) {
     .carousel-item img {
         height: 280px;
     }
-
 }
