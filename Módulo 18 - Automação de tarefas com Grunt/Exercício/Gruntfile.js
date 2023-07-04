@@ -16,40 +16,18 @@ module.exports = function(grunt) {
                 }
             }
         },
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
+        uglify: {
+            target: {
                 files: {
-                    'main2.css': 'main.scss'
+                    'main.min.js': 'main.js'
                 }
             }
-        },
-        concurrent: {
-            target: ['tarefaDemorada', 'olaGrunt', 'less', 'sass']
         }
     })
 
-    grunt.registerTask('olaGrunt', function() {
-        const done = this.async();
-        setTimeout(function() {
-            console.log('Olá Grunt');
-            done();
-        }, 3000);
-    })
-
-    grunt.registerTask('tarefaDemorada', function() {
-        const done = this.async();
-        setTimeout(function() {
-            console.log('Olá Grunt');
-            done();
-        }, 3000);
-    })    
-
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    
 
-    grunt.registerTask('default', ['concurrent']);
+    grunt.registerTask('default', ['less', 'uglify']);
 }
