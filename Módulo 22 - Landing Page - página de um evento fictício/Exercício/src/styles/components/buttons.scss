@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button {
     display: flex;
     justify-content: center;
@@ -6,15 +8,15 @@
 
     &--primary {
         padding: 16px;
-        color: #ff9900;
-        background-color: #391073;
+        color: variables.$orange;
+        background-color: variables.$purple;
         border-radius: 12px;
         text-decoration: none;
         transition: all ease .3s;
     }
 
     &--primary:hover {
-        color: #391073;
-        background-color: #ff9900;
+        color: variables.$purple;
+        background-color: variables.$orange;
     }
 }

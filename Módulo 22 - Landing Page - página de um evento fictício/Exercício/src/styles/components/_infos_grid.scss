@@ -1,5 +1,7 @@
+@use '../variables';
+
 .infos-grid {
-    color: #464646;
+    color: variables.$textColor;
     margin-bottom: 64px;
 
     &__infos {
@@ -11,7 +13,7 @@
         &__item {
             padding: 24px;
             font-size: 20px;
-            background-color: #ff9900;
+            background-color: variables.$orange;
             border-radius: 16px;
             transition: all ease .3s;
 
@@ -21,7 +23,7 @@
 
             b {
                 font-size: 32px;
-                color: #391073;
+                color: variables.$purple;
                 display: block;
                 padding: 8px 0;
             }
@@ -30,20 +32,20 @@
                 font-size: 14px;
                 font-style: italic;
                 font-weight: 700;
-                color: #391073;
+                color: variables.$purple;
             }
         }
 
         &__item:hover {
-            background-color: #391073;
-            color: #fff;
+            background-color: variables.$purple;
+            color: variables.$secundarytextColor;
 
             b {
-                color: #ff9900;
+                color: variables.$orange;
             }
 
             .text-small {
-                color: #ff9900;
+                color: variables.$orange;
             }
         }
 
