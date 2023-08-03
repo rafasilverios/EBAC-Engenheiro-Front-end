@@ -1,23 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const avatarUsuario = document.querySelector('#avatar');
-    const nomePerfil = document.querySelector('#name');
-    const nomeUsuario = document.querySelector('#username');
-    const repositoriosUsuario = document.querySelector('#repositorio');
-    const seguidoresUsuario = document.querySelector('#seguidores');
-    const usuarioSeguindo = document.querySelector('#seguindo');
-    const linkConta = document.querySelector('#link');
+$(document).ready(function() {
+    const avatarUsuario = $('#avatar');
+    const nomePerfil = $('#name');
+    const nomeUsuario = $('#username');
+    const repositoriosUsuario = $('#repositorio');
+    const seguidoresUsuario = $('#seguidores');
+    const usuarioSeguindo = $('#seguindo');
+    const linkConta = $('#link');
 
-    fetch('https://api.github.com/users/rafasilverios')
-        .then(function(resposta) {
-            return resposta.json();
-        })
-        .then(function(json) {
-            avatarUsuario.src = json.avatar_url;
-            nomePerfil.innerText = json.name;
-            nomeUsuario.innerText = json.login;
-            repositoriosUsuario.innerText = json.public_repos;
-            seguidoresUsuario.innerText = json.followers;
-            usuarioSeguindo.innerText = json.following;
-            linkConta.href = json.html_url;
-        })    
-})
+    const endpoint = 'https://api.github.com/users/rafasilverios';
+
+    $.ajax(endpoint).done(function(resposta) {
+        avatarUsuario.attr('src', resposta.avatar_url);
+        nomePerfil.text(resposta.name);
+        nomeUsuario.text(resposta.login);
+        repositoriosUsuario.text(resposta.public_repos);
+        seguidoresUsuario.text(resposta.followers);
+        usuarioSeguindo.text(resposta.following);
+        linkConta.attr('href', resposta.html_url);
+      })
+      .fail(function(erro) {
+        alert("Ocorreu um erro ao buscar o perfil do usuário");
+      });
+  });
