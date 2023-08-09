@@ -36,7 +36,7 @@ console.log(retornaUmCarro());
 
 
 const carro = {
-    valocidadeAtual: 40,
+    velocidadeAtual: 40,
     acelerar: function() {
         this.velocidadeAtual += 10;
     },
