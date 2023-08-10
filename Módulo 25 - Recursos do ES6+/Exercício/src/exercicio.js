@@ -26,7 +26,7 @@ const alunosAprovados = alunosENotas => alunosENotas.nota >= 6;
 const listaDeAprovados = alunosENotas.filter(alunosAprovados);
 console.log(listaDeAprovados);
 
-// bônus
+
 console.log("---------- Lista de Reprovados ----------")
 const alunosReprovados = alunosENotas => alunosENotas.nota < 6;
 const listaDeReporovados = alunosENotas.filter(alunosReprovados);
