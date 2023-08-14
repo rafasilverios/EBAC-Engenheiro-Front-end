@@ -21,3 +21,7 @@ dadosDaApi = 10;
 dadosDaApi = true;
 dadosDaApi = [1,2,3]
 dadosDaApi = 'Rafael';
+
+
+let curso = 'front-end';
+//curso = 10;
