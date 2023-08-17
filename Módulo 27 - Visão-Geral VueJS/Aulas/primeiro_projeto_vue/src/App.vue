@@ -25,6 +25,10 @@ const estaAutorizado = true;
 const estado = reactive({
   contador: 0,
   email: '',
+  saldo: 5000,
+  transferido: 0,
+  nomes: ['rafael', 'paulo', 'luisa', 'monica'],
+  nomeAInserir: '',
 });
 
 function incrementar() {
@@ -36,8 +40,28 @@ function decrementar() {
 }
 
 function alteraEmail(evento) {
-  estado.email = evento.target.value
+  estado.email = evento.target.value;
 }
+
+function mostraSaldoFuturo() {
+  const { saldo, transferido } = estado;
+  return saldo - transferido;
+}
+
+function validaValorTransferencia() {
+  const { saldo, transferido } = estado;
+  return saldo >= transferido;
+}
+
+function cadastraNome() {
+  if(estado.nomeAInserir.length >= 3) {
+    estado.nomes.push(estado.nomeAInserir)
+  } else {
+    alert("Digite mais caracteres")
+  }
+  
+}
+
 </script>
 
 <template>
@@ -67,10 +91,44 @@ function alteraEmail(evento) {
   {{ estado.email }}
   <!-- <input type="email" @keyup="evento => estado.email = evento.target.value"> -->
   <input type="email" @keyup="alteraEmail">
+
+  <br>
+  <hr>
+
+  Saldo: {{ estado.saldo }} <br>
+  Transferindo: {{ estado.transferido }} <br>
+  Saldo depois da transferência: {{ mostraSaldoFuturo() }} <br>
+  <input class="campo" :class="{ invalido: !validaValorTransferencia() }" @keyup="evento => estado.transferido = evento.target.value" type="number" placeholder="Quantia para transfer">
+  <button v-if="validaValorTransferencia()">Transferir</button>
+  <span v-else>Valor maior que o saldo</span>
+
+  <br>
+  <hr>
+
+  <ul>
+    <li v-for="nome in estado.nomes">
+      {{ nome }}
+    </li>
+  </ul>
+
+  <input @keyup="evento => estado.nomeAInserir = evento.target.value" type="text" placeholder="Digite um novo nome">
+  <button @click="cadastraNome" type="button">Cadastrar nome</button>
+
+  <h3 v-for="nome in estado.nomes">{{ nome }}</h3>
+
 </template>
 
 <style scoped>
 img{
-  height: 500px;
+  height: 300px;
+}
+
+.invalido {
+  outline-color: red;
+  border-color: red;
+}
+
+.campo {
+  border: 2px solid #000;
 }
 </style>
