@@ -1,18 +1,15 @@
-import './perfil.css'
+import styles from './Perfil.module.css';
 
 //export default () => {
 //export default function() {
-const Perfil = () => {    
-    const usuario = {
-        nome: 'Rafael Silverio', 
-        avatar: 'https://github.com/rafasilverios.png'
-    }
-    
+const Perfil = ({ nomeUsuario }) => {
     return (
-        <div>
-            <img className="perfil-avatar" src={usuario.avatar} alt="" />
-            <h3 className="perfil-titulo">{usuario.nome}</h3>
-        </div>
+        <header className={styles.header}>
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} alt="" />
+            <h1 className={styles.name}>
+                {nomeUsuario}
+            </h1>
+        </header>
     )
 }
 
