@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding-left: 0;
@@ -27,8 +31,22 @@ p {
 }
 
 header {
-    padding: 16px 0;
+    background-color: #ec2e3bda;
     color: #ecf0f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.container h1 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header, 
@@ -70,7 +88,7 @@ section .container {
 }
 
 #home {
-    margin-top: -64px;
+    /* margin-top: -64px; */
     background-image: url(Images/bg.jpg);
     min-height: 100vh;
 }
